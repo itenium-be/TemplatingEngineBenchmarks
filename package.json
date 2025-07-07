@@ -1,0 +1,22 @@
+{
+  "name": "templating-engines",
+  "version": "1.0.0",
+  "description": "Templating Engines: benchmarks",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/benchmark.ts"
+  },
+  "keywords": [],
+  "author": "itenium",
+  "license": "MIT",
+  "dependencies": {
+    "benny": "^3.7.1",
+    "handlebars": "^4.7.8",
+    "mustache": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/mustache": "^4.2.6",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
