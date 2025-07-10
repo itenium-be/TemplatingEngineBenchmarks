@@ -25,6 +25,8 @@ npm run serve
 
 ## Precompile Handlebars
 
+See [Load precompiled templates from Typescript](https://github.com/handlebars-lang/handlebars.js/issues/1528)
+
 ```sh
 cd src
 npx handlebars minimal-precompiled.handlebars -f minimal-precompiled-hbs.js -c handlebars
