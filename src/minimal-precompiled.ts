@@ -1,28 +1,15 @@
 import * as b from 'benny';
 import Handlebars from 'handlebars';
-// import './minimal-precompiled.js';
+import './minimal-precompiled-hbs.js';
 import Mustache from 'mustache';
+
+// console.log('handlebars.templates', Handlebars.templates);
 
 const data = {
   name: 'Alice',
   projectMonth: 'July 2025',
   orderNr: '1234',
 };
-
-const hbsTemplate = `
-  Hello {{name}}, project month is {{projectMonth}}.
-  {{#if orderNr}}Order: {{orderNr}}{{/if}}
-`;
-
-const precompiled = Handlebars.precompile(hbsTemplate, {
-  knownHelpers: {'if': true},
-  knownHelpersOnly: true,
-});
-
-const template = Handlebars.template(eval('(' + precompiled + ')')); // as HandlebarsTemplateDelegate<User>;
-
-// const hbsTemplate = Handlebars.templates['minimal-precompiled'];
-
 
 const mustacheTemplate = `
   Hello {{name}}, project month is {{projectMonth}}.
@@ -34,11 +21,10 @@ export default function suite() {
     'Template Engine Benchmark: Minimal precompiled',
 
     b.add('Handlebars', () => {
-      template(data);
+      Handlebars.templates['minimal-precompiled'](data);
     }),
 
     b.add('Mustache', () => {
-      // ATTN TODO: Mustache.parse(mustacheTemplate); might make it even more performant for Mustache
       Mustache.render(mustacheTemplate, data);
     }),
 

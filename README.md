@@ -21,3 +21,17 @@ npm start
 # See graphs
 npm run serve
 ```
+
+
+## Precompile Handlebars
+
+```sh
+cd src
+npx handlebars minimal-precompiled.handlebars -f minimal-precompiled-hbs.js -c handlebars
+
+# and then we changed
+var Handlebars = require("handlebars");
+# into
+import Handlebars from "handlebars";
+# 😀
+```

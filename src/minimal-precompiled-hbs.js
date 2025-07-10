@@ -1,5 +1,6 @@
-(function() {
-  var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
+import Handlebars from "handlebars";
+
+var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
 templates['minimal-precompiled'] = template({"1":function(container,depth0,helpers,partials,data) {
     var helper, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -26,4 +27,3 @@ templates['minimal-precompiled'] = template({"1":function(container,depth0,helpe
     + ((stack1 = lookupProperty(helpers,"if").call(alias1,(depth0 != null ? lookupProperty(depth0,"orderNr") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":2,"column":0},"end":{"line":2,"column":40}}})) != null ? stack1 : "")
     + "\r\n";
 },"useData":true});
-})();
