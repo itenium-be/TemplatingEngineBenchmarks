@@ -7,5 +7,17 @@ Templating Engines
 - [eta](https://github.com/eta-dev/eta) ⭐ 5k -- 11 months ago
 - [doT](https://github.com/olado/doT) ⭐ 2k -- 5 years ago
 
+Benchmarks with: [benny](https://github.com/caderek/benny)
 
-Benchmarks with: https://github.com/caderek/benny
+
+## Run Benchmarks
+
+```sh
+npm install
+
+# Run benchmarks
+npm start
+
+# See graphs
+npm run serve
+```

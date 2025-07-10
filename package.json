@@ -4,7 +4,8 @@
   "description": "Templating Engines: benchmarks",
   "type": "module",
   "scripts": {
-    "start": "tsx src/benchmark.ts"
+    "start": "tsx src/benchmark.ts",
+    "serve": "http-server benchmark/results"
   },
   "keywords": [],
   "author": "itenium",
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "@types/mustache": "^4.2.6",
+    "http-server": "^14.1.1",
     "tsx": "^4.20.3",
     "typescript": "^5.8.3"
   }
