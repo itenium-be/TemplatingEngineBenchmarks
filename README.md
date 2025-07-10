@@ -23,6 +23,18 @@ npm run serve
 ```
 
 
+## Benchmark Results
+
+See `benchmark/results`
+
+### Mustache vs Handlebars Charts
+
+![Benchmark without precompilation](benchmark/charts/maximal-without.png)
+
+![Benchmark WITH precompilation](benchmark/charts/maximal-precompiled.png)
+
+
+
 ## Precompile Handlebars
 
 See [Load precompiled templates from Typescript](https://github.com/handlebars-lang/handlebars.js/issues/1528)
