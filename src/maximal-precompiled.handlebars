@@ -1,0 +1,33 @@
+Hello {{clientName}},
+
+Please find below the summary for project **{{projectName}}** for the month of {{projectMonth}}.
+
+Consultant: {{consultantName}}
+Billing Period: {{billingPeriodStart}} - {{billingPeriodEnd}}
+Invoice Number: {{invoiceNumber}}
+{{#if orderNumber}}Order Number: {{orderNumber}}{{/if}}
+
+{{#each days}}
+- {{date}}: {{hours}}h - {{activity}}
+{{/each}}
+
+Total hours: {{totalHours}}
+Hourly Rate: €{{hourlyRate}}
+Subtotal: €{{subtotal}}
+
+{{#if discount}}
+Discount: -€{{discountAmount}} ({{discountDescription}})
+{{/if}}
+
+Total (excl. VAT): €{{totalExclVat}}
+VAT ({{vatRate}}%): €{{vatAmount}}
+**Grand Total: €{{totalInclVat}}**
+
+{{#if notes}}
+Note: {{notes}}
+{{/if}}
+
+The signed timesheet is attached to this message.
+
+Kind regards,
+The {{companyName}} team

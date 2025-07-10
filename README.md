@@ -28,6 +28,7 @@ npm run serve
 ```sh
 cd src
 npx handlebars minimal-precompiled.handlebars -f minimal-precompiled-hbs.js -c handlebars
+npx handlebars maximal-precompiled.handlebars -f maximal-precompiled-hbs.js -c handlebars
 
 # and then we changed
 var Handlebars = require("handlebars");
