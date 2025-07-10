@@ -1,0 +1,27 @@
+{
+  "name": "Template Engine Benchmark: Maximal without",
+  "date": "2025-07-10T21:18:24.630Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "Handlebars",
+      "ops": 92416,
+      "margin": 4.89,
+      "percentSlower": 0
+    },
+    {
+      "name": "Mustache",
+      "ops": 91781,
+      "margin": 2.6,
+      "percentSlower": 0.69
+    }
+  ],
+  "fastest": {
+    "name": "Handlebars",
+    "index": 0
+  },
+  "slowest": {
+    "name": "Mustache",
+    "index": 1
+  }
+}
